@@ -12,7 +12,9 @@
     "serve:ssr": "node dist/dvn-firestarter/server/main.js",
     "build:ssr": "ng build --prod && ng run dvn-firestarter:server:production",
     "prerender": "ng run dvn-firestarter:prerender",
-    "prebuild:ssr": "ngcc"
+    "prebuild:ssr": "ngcc",
+    "start:heroku":"node dist/server",
+    "postinstall":"npm run build:ssr"
   },
   "private": true,
   "dependencies": {
