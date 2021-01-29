@@ -1,1 +1,171 @@
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import "~@angular/material/theming";
+@import "assets/fonts/Montserrat/font";
+@import "assets/fonts/ArchitectsDaughter/font";
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+$custom-typography: mat-typography-config(
+  $font-family: "Architects Daughter",
+  $headline: mat-typography-level(34px, 52px, 700),
+  $title: mat-typography-level(22px, 40px, 700),
+  $body-1: mat-typography-level(18px, 24px, 400),
+  $body-2: mat-typography-level(16px, 22px, 400),
+  $button: mat-typography-level(18px, 24px, 400),
+);
+
+.mat-input-element {
+  font-size: 20px !important;
+  letter-spacing: 0.1em;
+}
+.mat-simple-snackbar {
+  font-size: 18px !important;
+  .mat-button {
+    color: whitesmoke !important;
+  }
+}
+
+@include mat-core($custom-typography);
+
+$primary-palette: (
+  50: #f2f8ef,
+  100: #dfedd8,
+  200: #c9e2be,
+  300: #b3d6a4,
+  400: #a3cd91,
+  500: #93c47d,
+  600: #8bbe75,
+  700: #80b66a,
+  800: #76af60,
+  900: #64a24d,
+  A100: #ffffff,
+  A200: #daffcd,
+  A400: #b4ff9a,
+  A700: #a1ff80,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #000000,
+    600: #000000,
+    700: #000000,
+    800: #000000,
+    900: #000000,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000,
+  ),
+);
+
+/* For use in src/lib/core/theming/_palette.scss */
+$secondary-palette: (
+  50: #f1e9ec,
+  100: #dcc8d0,
+  200: #c5a3b1,
+  300: #ae7e91,
+  400: #9c637a,
+  500: #8b4762,
+  600: #83405a,
+  700: #783750,
+  800: #6e2f46,
+  900: #5b2034,
+  A100: #ff9cbc,
+  A200: #ff6999,
+  A400: #ff3677,
+  A700: #ff1d66,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #ffffff,
+    A700: #ffffff,
+  ),
+);
+
+/* For use in src/lib/core/theming/_palette.scss */
+$md-warn-palette: (
+  50: #fce1e1,
+  100: #f8b3b3,
+  200: #f38181,
+  300: #ee4e4e,
+  400: #eb2828,
+  500: #e70202,
+  600: #e40202,
+  700: #e00101,
+  800: #dd0101,
+  900: #d70101,
+  A100: #fffefe,
+  A200: #ffcbcb,
+  A400: #ff9898,
+  A700: #ff7f7f,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #ffffff,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000,
+  ),
+);
+
+$dvn-firestarter-primary: mat-palette($primary-palette);
+$dvn-firestarter-accent: mat-palette($secondary-palette);
+
+// The warn palette is optional (defaults to red).
+$dvn-firestarter-warn: mat-palette($md-warn-palette);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$dvn-firestarter-theme: mat-light-theme(
+  (
+    color: (
+      primary: $dvn-firestarter-primary,
+      accent: $dvn-firestarter-accent,
+      warn: $dvn-firestarter-warn,
+    ),
+  )
+);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($dvn-firestarter-theme);
+
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+  letter-spacing: 0.05em !important;
+}
+body {
+  margin: 0;
+}
+a {
+  color: white;
+  text-decoration: none;
+}

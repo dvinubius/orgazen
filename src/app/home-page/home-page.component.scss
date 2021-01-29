@@ -1,0 +1,43 @@
+:host {
+  height: 100vh;
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  font-family: "Architects Daughter";
+}
+
+.heading {
+  text-align: center;
+  font-size: 3em;
+  font-weight: 400;
+  margin: 36px;
+  letter-spacing: 0.05em;
+}
+.glow {
+  animation: glow 2s infinite alternate ease-in-out;
+}
+@keyframes glow {
+  0% {
+    text-shadow: 0px 1px 8px hsl(20, 65%, 50%);
+  }
+  100% {
+    text-shadow: 0px 1px 8px hsl(40, 100%, 70%);
+  }
+}
+
+.divider {
+  margin-top: 48px;
+}
+
+.emo {
+  font-size: 4em;
+  letter-spacing: 0.05em;
+}
+
+p {
+  font-size: 1.5em;
+  margin: 24px;
+  letter-spacing: 0.05em;
+}

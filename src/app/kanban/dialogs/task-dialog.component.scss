@@ -1,0 +1,34 @@
+.content {
+  overflow: hidden;
+  height: auto;
+  padding: 20px;
+  width: 100%;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+}
+
+.blue {
+  color: hsl(194, 80%, 78%);
+}
+.green {
+  color: hsl(163, 70%, 70%);
+}
+.yellow {
+  color: hsl(45, 99%, 68%);
+}
+.purple {
+  color: hsl(271, 70%, 78%);
+}
+.gray {
+  color: #909090;
+}
+.red {
+  color: #e74a4a;
+}

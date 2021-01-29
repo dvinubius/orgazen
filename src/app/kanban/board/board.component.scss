@@ -1,0 +1,54 @@
+.blue {
+  background: hsl(194, 80%, 78%);
+  color: black;
+}
+.green {
+  background: hsl(163, 70%, 70%);
+  color: black;
+}
+.yellow {
+  background: hsl(45, 99%, 68%);
+  color: black;
+}
+.purple {
+  background: hsl(271, 70%, 78%);
+}
+.red {
+  background: hsl(0, 87%, 67%);
+}
+.gray {
+  background: #909090;
+  text-decoration: line-through;
+}
+
+.outer-card {
+  margin: 10px;
+  min-width: 300px;
+  max-width: 300px;
+  padding: 10px;
+  // background: #212121;
+}
+
+::ng-deep .outer-card .mat-card-header-text + mat-icon {
+  // margin-left: auto !important;
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.inner-card {
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.cdk-drag-animating {
+  transition: transform 300ms ease;
+}
+
+.tasks.cdk-drop-list-dragging .cdk-drag {
+  transition: transform 300ms ease;
+}
+
+.cdk-drag-placeholder {
+  opacity: 0.5;
+}
