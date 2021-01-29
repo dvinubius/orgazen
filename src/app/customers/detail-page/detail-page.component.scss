@@ -1,0 +1,35 @@
+:host {
+  text-align: center;
+  padding: 24px;
+}
+mat-card {
+  max-width: 450px;
+  background-color: white;
+  margin: 0 auto 10px;
+}
+
+.tech {
+  font-size: 0.9em;
+}
+
+.paste {
+  font-family: "Courier New", Courier, monospace;
+  transform: translateY(12px);
+}
+.url {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 3em;
+  overflow-x: scroll;
+  font-family: "Courier New", Courier, monospace;
+}
+.back {
+  position: absolute;
+  left: 50vw;
+  top: 88px;
+  transform: translateX(calc(-320px - 50%));
+}
+.details {
+  text-align: left;
+}

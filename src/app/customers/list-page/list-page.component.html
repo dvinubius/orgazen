@@ -1,1 +1,13 @@
-<p>list-page works!</p>
+<h1>Happy OrgaZen Users</h1>
+<p>~ ~ ~ And their stories ~ ~ ~</p>
+
+<mat-nav-list role="list">
+  <mat-list-item
+    *ngFor="let cust of customers | async"
+    [routerLink]="cust.id"
+    role="listitem"
+  >
+    <mat-icon mat-list-icon>account_box</mat-icon>
+    <h3 class="cust-name">{{ cust.name }}</h3>
+  </mat-list-item>
+</mat-nav-list>
