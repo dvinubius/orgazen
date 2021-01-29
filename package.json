@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "node dist/server/main.js",
+    "start": "node dist/dvn-firestarter/server/main.js",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
@@ -12,7 +12,7 @@
     "build:ssr": "ng build --prod && ng run dvn-firestarter:server:production",
     "prerender": "ng run dvn-firestarter:prerender",
     "prebuild:ssr": "ngcc",
-    "start:heroku":"node dist/server/main.js",
+    "start:heroku":"node dist/dvn-firestarter/server/main.js",
     "postinstall":"npm run build:ssr"
   },
   "private": true,
