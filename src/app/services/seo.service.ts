@@ -15,7 +15,7 @@ export class SeoService {
   generateTags({ title = '', description = '', image = '' }) {
     this.title.setTitle(title);
     this.meta.addTags([
-      { name: 'og:url', content: 'https://orgazen.vercel.app' },
+      { name: 'og:url', content: 'https://orgazen.herokuapp.com/' },
       { name: 'og:title', content: title },
       { name: 'og:description', content: description },
       { name: 'og:image', content: image },
