@@ -27,7 +27,7 @@ export class BoardService {
    * Deletes board with given id
    */
   async deleteBoard(boardId: string) {
-    return this.db.collection('board').doc(boardId).delete();
+    this.db.collection('boards').doc(boardId).delete();
   }
 
   async updateTasks(boardId: string, tasks: Task[]) {

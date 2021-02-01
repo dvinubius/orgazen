@@ -41,9 +41,11 @@
         <a mat-button routerLink="/customers"
           ><span class="emoji">⭐</span> Succes Stories</a
         >
-        <a mat-button routerLink="/login" *ngIf="!(afAuth.authState | async)"
-          ><span class="emoji">🔑</span> Login</a
-        >
+        <ng-container *ngIf="isInBrowser">
+          <a mat-button routerLink="/login" *ngIf="!(afAuth.authState | async)"
+            ><span class="emoji">🔑</span> Login</a
+          >
+        </ng-container>
       </div>
       <button
         mat-icon-button
@@ -66,11 +68,13 @@
           <i>👶</i>
           <span>My First Portfolio</span>
         </a>
-        <ng-container *ngIf="!!(afAuth.authState | async)">
-          <mat-divider></mat-divider>
-          <a mat-menu-item (click)="logout()"
-            ><span class="emoji">👋</span> Logout</a
-          >
+        <ng-container *ngIf="isInBrowser">
+          <ng-container *ngIf="!!(afAuth.authState | async)">
+            <mat-divider></mat-divider>
+            <a mat-menu-item (click)="logout()"
+              ><span class="emoji">👋</span> Logout</a
+            >
+          </ng-container>
         </ng-container>
       </mat-menu>
     </mat-toolbar>

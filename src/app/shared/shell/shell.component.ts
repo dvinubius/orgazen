@@ -1,9 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject, PLATFORM_ID } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
 import { AngularFireAuth } from '@angular/fire/auth';
 import { Router } from '@angular/router';
+import { isPlatformBrowser } from '@angular/common';
 
 @Component({
   selector: 'app-shell',
@@ -18,10 +19,16 @@ export class ShellComponent {
       shareReplay()
     );
 
+  get isInBrowser() {
+    const val = isPlatformBrowser(this.platformId);
+    return isPlatformBrowser(this.platformId);
+  }
+
   constructor(
     private breakpointObserver: BreakpointObserver,
     public afAuth: AngularFireAuth,
-    private router: Router
+    private router: Router,
+    @Inject(PLATFORM_ID) protected platformId: Object
   ) {}
 
   logout() {
