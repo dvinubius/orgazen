@@ -32,7 +32,7 @@ export class ShellComponent {
   ) {}
 
   logout() {
-    this.afAuth.signOut();
+    this.afAuth.auth.signOut();
     this.router.navigateByUrl('');
   }
 }

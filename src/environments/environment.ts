@@ -5,14 +5,12 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: 'AIzaSyB62TN1GJ7WHp9gLtijOK4HzgRXphy0T8U',
-    authDomain: 'dvn-firestarter.firebaseapp.com',
-    databaseURL: 'https://dvn-firestarter.firebaseio.com',
-    projectId: 'dvn-firestarter',
-    storageBucket: 'dvn-firestarter.appspot.com',
-    messagingSenderId: '322621108304',
-    appId: '1:322621108304:web:ee8c73fce7445559806155',
-    measurementId: 'G-VHPSFGXK1X',
+    apiKey: 'AIzaSyBbchRPlnubnAKUjf_5uKQuhfxrG4Mxm_Q',
+    authDomain: 'orgazen-ffcf2.firebaseapp.com',
+    projectId: 'orgazen-ffcf2',
+    storageBucket: 'orgazen-ffcf2.appspot.com',
+    messagingSenderId: '995815450326',
+    appId: '1:995815450326:web:adda2c4f79b8c30e3c4b77',
   },
 };
 

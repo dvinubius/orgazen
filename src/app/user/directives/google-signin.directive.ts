@@ -13,7 +13,7 @@ export class GoogleSigninDirective {
 
   @HostListener('click')
   async onClick() {
-    const res = await this.afAuth.signInWithPopup(
+    const res = await this.afAuth.auth.signInWithPopup(
       new firebase.auth.GoogleAuthProvider()
     );
     if (res.user && this.redirectUrl) {

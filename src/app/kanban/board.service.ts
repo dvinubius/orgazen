@@ -15,7 +15,7 @@ export class BoardService {
    * Creates new board for the current user
    */
   async createBoard(data: Board) {
-    const user = await this.afAuth.currentUser;
+    const user = await this.afAuth.auth.currentUser;
     return this.db.collection('boards').add({
       ...data,
       uid: user.uid,
