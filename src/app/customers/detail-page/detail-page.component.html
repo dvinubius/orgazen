@@ -14,22 +14,24 @@
 <br />
 <br />
 <mat-card class="tech">
-  <p>This page is rendered with Angular Universal and NestJS.</p>
-  <p>Our users do a great job at feeling good.</p>
-  <p>They deserve this.</p>
-  ⭐⭐⭐⭐⭐
-  <br />
-  <br />
-  <div class="paste">Paste URL:</div>
+  <p>This page is tweetable with a preview!</p>
   <div class="url">
-    https://orgazen.herokuapp.com/customers/{{ customerId }}
+    {{ getURL }}
   </div>
+  <div class="url-block">
+    <p>Copy URL</p>
+    <div class="copy" [cdkCopyToClipboard]="getURL">
+      <mat-icon>content_copy</mat-icon>
+    </div>
+    <p>and try</p>
+    <!-- <mat-icon class="arrow">arrow_right_alt</mat-icon> -->
 
-  <a
-    href="https://cards-dev.twitter.com/validator"
-    target="blank"
-    mat-stroked-button
-    color="accent"
-    >Twitter Card Validator</a
-  >
+    <a
+      href="https://cards-dev.twitter.com/validator"
+      target="blank"
+      mat-stroked-button
+      color="accent"
+      >Twitter Card Validator</a
+    >
+  </div>
 </mat-card>

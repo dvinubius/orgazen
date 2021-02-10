@@ -27,3 +27,9 @@ mat-list-item {
   }
   transition: transform 300ms ease;
 }
+
+.disclaimer {
+  opacity: 0.75;
+  transform: translate(143px, 8px);
+  color: hsl(20, 65%, 50%);
+}

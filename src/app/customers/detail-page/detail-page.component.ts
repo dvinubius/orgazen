@@ -36,4 +36,8 @@ export class DetailPageComponent implements OnInit {
         )
       );
   }
+
+  get getURL(): string {
+    return `https://orgazen.herokuapp.com/customers/${this.customerId}`;
+  }
 }
