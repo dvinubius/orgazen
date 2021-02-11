@@ -1,8 +1,8 @@
 :host {
   display: flex;
-  height: 100%;
+  height: calc(100% - 100px); // 100px from 36px top padding + 64px top bar
   padding: 36px 36px 0;
-  overflow: scroll;
+  // overflow: scroll;
   flex-direction: column;
   align-items: center;
 }

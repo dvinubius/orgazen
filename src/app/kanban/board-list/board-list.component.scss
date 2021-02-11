@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: row;
   overflow-x: scroll;
-  height: 100%;
+  height: calc(100% - 112px); // top bar 64px + vertical padding 24px
   &::-webkit-scrollbar {
     height: 4px;
     width: 4px;
