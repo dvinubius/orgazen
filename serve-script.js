@@ -1,6 +1,6 @@
 const { LiveReloadCompiler } = require("@nestjs/ng-universal");
 
 const compiler = new LiveReloadCompiler({
-  projectName: "zenorga",
+  projectName: "dvn-firestarter",
 });
 compiler.run();
