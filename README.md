@@ -26,7 +26,7 @@ https://github.com/dvinubius/orgazen/assets/32189942/effe033b-5b19-4ffb-bb0b-bc2
 
 ---
 
-<img width="800" alt="orgazen2" src="https://github.com/dvinubius/orgazen/assets/32189942/de7334e8-bbf4-4773-8695-d9c8bc18d40b">
+<img width="1100" alt="orgazen2" src="https://github.com/dvinubius/orgazen/assets/32189942/4d94bbed-28ac-4615-949d-8e9960ef4999">
 
 ---
 
