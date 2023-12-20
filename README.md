@@ -1,5 +1,19 @@
 # OrgaZen
 
+Kanban Board for relaxed ultra productive people 🔥😎🔥
+
+Based on the fireship.io Angular Firebase [course](https://fireship.io/courses/angular/). 
+
+Showcases Angular Universal (SSR / SSG), real time updates (Firebase) and advanced Angular Material patterns (drag&drop, theming).
+
+I have added
+- minor functionality & UI tweaks
+- new branding & theming
+
+### Visit the app ⚡️ [here](https://orgazen.herokuapp.com/) ⚡️
+
+
+## Technicalities
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.1.
 
 ## Development server
